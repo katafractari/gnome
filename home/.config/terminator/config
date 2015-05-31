@@ -1,0 +1,29 @@
+[global_config]
+  title_hide_sizetext = True
+  window_state = maximise
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    use_system_font = False
+    copy_on_selection = True
+    background_darkness = 0.88
+    background_type = transparent
+    background_image = None
+    use_custom_command = True
+    login_shell = True
+    show_titlebar = False
+    custom_command = tmux
+    font = Inconsolata-g Medium 10
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
